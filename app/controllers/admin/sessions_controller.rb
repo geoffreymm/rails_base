@@ -1,4 +1,4 @@
-class Admin::SessionsController < ApplicationController
+class Admin::SessionsController < Admin::BaseController
 	def new
 	end
 
@@ -15,6 +15,6 @@ class Admin::SessionsController < ApplicationController
 
 	def destroy
 	  session[:user_id] = nil
-	  redirect_to root_url, :notice => "Logged out!"
+	  redirect_to admin_path, :notice => "Logged out!"
 	end
 end
