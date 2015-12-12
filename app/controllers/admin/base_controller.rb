@@ -1,6 +1,8 @@
 class Admin::BaseController < ApplicationController
   helper_method :current_user
 
+  layout "admin"
+
   def index
   end
 
