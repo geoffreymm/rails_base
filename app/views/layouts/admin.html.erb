@@ -9,10 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => false %>
+    <%= javascript_include_tag 'admin', 'data-turbolinks-track' => false %>
+
+
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
-    <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => false %>
-    <%= csrf_meta_tags %>
 </head>
 
 <body>
@@ -895,8 +897,6 @@
 
     </div>
     <!-- /#wrapper -->
-
-<%= javascript_include_tag "admin" %>
 
 
 </body>

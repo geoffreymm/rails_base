@@ -1,10 +1,9 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
 /*
- *= require font-awesome
- *= require admin/libs/bootstrap-theme.min
- *= require admin/libs/metisMenu.min
- *= require admin/timeline
- *= require admin/sb-admin-2
- */
+*= require_self
+*= require admin/libs/imports
+*= require font-awesome
+*= require admin/libs/bootstrap-theme.min
+*= require admin/libs/metisMenu.min
+*= require admin/sb-admin-2.css
+*= require admin/timeline
+*/
