@@ -1,4 +1,6 @@
 class Admin::SessionsController < Admin::BaseController
+	skip_before_filter :limit_access
+
 	def new
 	end
 
