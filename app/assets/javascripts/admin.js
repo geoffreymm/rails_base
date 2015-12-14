@@ -3,7 +3,6 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 //= require bootstrap-sprockets
 //= require admin/libs/metisMenu.min
 //= require admin/sb-admin-2
