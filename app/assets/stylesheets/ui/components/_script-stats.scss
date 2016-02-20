@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #SCRIPT-STATS
+\*------------------------------------*/
+.script-stats {
+	font-size: 18px;
+}
+
+	.script-stats__item {
+		display: inline-block;
+		padding: 0 16px 0 20px;
+		border-left: 1px dotted $grey-text-lighter;
+		text-align: center;
+		line-height: 16px;
+	}
+
+		.script-stats__label {
+			display: block;
+			margin: 0 auto;
+			font-size: 10px;
+			color: $grey-text-light;
+		}

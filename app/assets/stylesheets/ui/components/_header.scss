@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+header {
+	background-color: $blue-dark;
+	padding: 16px 0;
+}
+	
+	.header__logo {
+		display: inline-block;
+
+		img {
+			height: 32px;
+		}
+	}
+
+.site-nav {
+	float: right;
+	line-height: 38px;
+}
+
+	.site-nav__item {
+		display: inline-block;
+		margin-right: 22px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+		.site-nav__link {
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #fff;
+		}

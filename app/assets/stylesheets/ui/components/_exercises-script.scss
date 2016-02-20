@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #EXERCISES-SCRIPT
+\*------------------------------------*/
+.exercises-script {
+	background-color: #fff;
+	border-bottom: 1px solid $grey-text-lighter;
+}
+
+	.exercises-script__body {
+		padding: 20px 0 40px;
+	}
+
+		.exercises-script__carousel {
+			&:after {
+				content: '';
+		    position: relative;
+		    display: inline-block;
+		    width: 140px;
+		    height: 230px;
+		    border-radius: 4px;
+		    background-color: #fff;
+		    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+			}
+
+			li {
+				display: inline-block;
+				margin-right: 6px;
+			}
+		}
+
+		.exercises-script__details {
+			display: none;
+		}

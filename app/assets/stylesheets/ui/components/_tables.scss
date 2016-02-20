@@ -1,0 +1,119 @@
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+$border-radius: 6px;
+
+%border-top-left {
+  -webkit-border-top-left-radius: $border-radius;
+  	 -moz-border-radius-topleft: $border-radius;
+  				border-top-left-radius: $border-radius;
+}
+
+%border-top-right {
+  -webkit-border-top-right-radius: $border-radius;
+     -moz-border-radius-topright: $border-radius;
+  				border-top-right-radius: $border-radius;
+}
+
+%border-bottom-left {
+  -webkit-border-bottom-left-radius: $border-radius;
+  	 -moz-border-radius-bottomleft: $border-radius;
+  				border-bottom-left-radius: $border-radius;
+}
+
+%border-bottom-right {
+  -webkit-border-bottom-right-radius: $border-radius;
+     -moz-border-radius-bottomright: $border-radius;
+  				border-bottom-right-radius: $border-radius;
+}
+
+
+.table {
+	width: 100%;
+	border-collapse: inherit;
+
+	tr {
+		line-height: 40px;
+
+		&:first-child {
+			td {
+				border-top: 1px solid $grey-border;
+			}
+		}
+
+		&:last-child {
+			td {
+				border-bottom: 2px solid $grey-border;
+			}
+		}
+
+		&:first-child td:first-child {
+			@extend %border-top-left;
+		}
+
+		&:first-child td:last-child {
+			@extend %border-top-right;
+		}
+
+		&:last-child td:first-child {
+			@extend %border-bottom-left;
+		}
+
+		&:last-child td:last-child {
+			@extend %border-bottom-right;
+		}
+
+		td:first-child {
+			border-left: 1px solid $grey-border;
+		}
+
+		td:last-child {
+			border-right: 1px solid $grey-border;
+		}
+	}
+
+	th {
+		text-align: left;
+		padding-left: 20px;
+		font-size: 14px;
+	}
+
+	td {
+		padding-left: 20px;
+		background-color: #fff;
+		font-size: 13px;
+		border-bottom: 1px solid $grey-border;
+	}
+
+	a {
+		display: inline-block;
+		margin-left: 5px;
+		line-height: 1em;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.table--big {
+	tbody td {
+		padding: 9px 0 9px 20px;
+	}
+}
+
+.table--actions {
+	td:last-child {
+		padding-right: 5px;
+		text-align: right;
+	}
+
+	&.table--big {
+		td:last-child {
+			padding-right: 20px;
+		}
+	}
+}
+
+
+

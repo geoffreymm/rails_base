@@ -1,0 +1,77 @@
+/*------------------------------------*\
+    #FONTICONS
+\*------------------------------------*/
+@font-face {
+  font-family: 'wellclub-bridge';
+  src: url('/assets/wellclub-bridge.eot?5t4xta');
+  src: url('/assets/wellclub-bridge.eot?5t4xta#iefix') format('embedded-opentype'),
+       url('/assets/wellclub-bridge.ttf?5t4xta') format('truetype'),
+       url('/assets/wellclub-bridge.woff?5t4xta') format('woff'),
+       url('/assets/wellclub-bridge.svg?5t4xta#wellclub-bridge') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wellclub-bridge' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+
+.icon-arrow-left:before {
+  content: "\e901";
+}
+
+.icon-arrow-right:before {
+  content: "\e902";
+}
+
+.icon-calendar:before {
+  content: "\e903";
+}
+
+.icon-chat:before {
+  content: "\e904";
+}
+
+.icon-close:before {
+  content: "\e905";
+}
+
+.icon-edit:before {
+  content: "\e906";
+}
+
+.icon-grabage:before {
+  content: "\e907";
+}
+
+.icon-info:before {
+  content: "\e908";
+}
+
+.icon-list:before {
+  content: "\e909";
+}
+
+.icon-plus:before {
+  content: "\e90a";
+}
+
+.icon-search:before {
+  content: "\e90b";
+}
+

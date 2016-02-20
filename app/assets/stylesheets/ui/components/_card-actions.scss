@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #CARD-ACTIONS
+\*------------------------------------*/
+.card-actions {
+	padding: 5px 10px 10px;
+	color: $grey-text-light;
+
+	a { 
+		line-height: 23px;
+	}
+}
+
+	.card-actions__move-left {
+		float: left;
+		font-size: 13px;
+	}
+
+	.card-actions__move-right {
+		float: right;
+		font-size: 13px;
+	}

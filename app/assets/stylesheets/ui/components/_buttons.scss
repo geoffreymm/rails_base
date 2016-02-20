@@ -1,0 +1,144 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+.btn {
+	display: block;
+	padding: 7px 10px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.btn--default {
+	border: 1px solid $grey-text-lighter;
+	color: $grey-text-light;
+}
+
+.btn--delete {
+	background-color: $red;
+	border: 1px solid $red;
+	font-weight: 600;
+	color: #fff;
+}
+
+.btn--blue {
+	background-color: $blue;
+	font-weight: 600;
+	color: #fff;
+}
+
+.btn--grey {
+	border: 1px solid $grey-text-lighter;
+	background-color: $grey-light;
+}
+
+.btn--small {
+	padding: 4px 10px;
+}
+
+.btn--big {
+	width: 136px;
+}
+
+.btn--txt-med {
+	font-size: 13px;
+}
+
+.btn--txt-small {
+	font-size: 12px;
+}
+
+.btn--edit {
+	background-color: rgba(48, 54, 65, 0.7);
+	width: 90px;
+	border: 1px solid;
+  line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.btn--select {
+	border: 1px solid $grey-text-lighter;
+	color: $grey-text-light;
+
+	&.active {
+		background-color: $blue;
+		color: #fff;
+	}
+}
+
+/* Checkbox Buttons 
+ *
+ * Use this + btn classes to create btns from checkboxes 
+ */
+
+.checkbox-btn {
+	input {
+		display: none;
+	}
+
+	label {
+		cursor: pointer;
+	}
+}
+
+/* Checkbox button blue */
+.checkbox-btn--blue {
+	input:checked + label {
+		background-color: $blue;
+		color: #fff;
+	}
+}
+
+/* Round Action Buttons 
+ *
+ * 
+ */
+
+.round-btn {
+	float: right;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	color: $grey-text-light;
+}
+
+.round-btn--small {
+	height: 24px;
+	width: 24px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	line-height: 24px;
+	font-size: 13px;
+}
+
+.round-btn--med {
+	height: 44px;
+	width: 44px;
+	box-shadow: 0 0 11px rgba(0,0,0,0.25);
+	line-height: 44px;
+}
+
+.round-btn--big {
+	height: 60px;
+	width: 60px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	line-height: 60px;
+}
+
+.round-btn--border {
+	border: 1px solid $grey-text-light;
+}
+
+.round-btn--blue {
+	background-color: $blue;
+}
+
+
+
+
+
+
+
+
+

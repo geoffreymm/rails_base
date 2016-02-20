@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    #LEADERBOARD
+\*------------------------------------*/
+.leaderboard {
+	width: 400px;
+	height: 174px;
+}
+
+	.leaderboard__title {
+		line-height: 52px;
+		margin-bottom: 0;
+	}
+
+	.leaderboard__content {
+		li {
+			border-top: 1px solid $grey-border;
+			font-size: 14px;
+			line-height: 30px;
+			color: $grey-text-dark;
+
+			&:first-child {
+				.leaderboard__scrore {
+					color: $green;
+				}
+			}
+
+			&:nth-child(2) {
+				.leaderboard__scrore {
+					color: $yellow;
+				}
+			}
+
+			&:nth-child(4) {
+				background-color: $grey;
+			}
+
+			span {
+				display: inline-block;
+			}
+		}
+	}
+
+		.leaderboard__ranking {
+			width: 22%;
+			color: $grey-text-light;
+		}
+
+		.leaderboard__scrore {
+			width: 22%;
+			color: $red;
+		}
+
+		.leaderboard__name {
+			width: 56%;
+			padding-left: 45px;
+			text-align: left;
+			color: $grey-text-mid;
+		}

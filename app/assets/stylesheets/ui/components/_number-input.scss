@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #NUMBER-INPUT
+\*------------------------------------*/
+.number-input {
+	display: inline-block;
+	text-align: center;
+}
+
+	.number-input__container {
+		background-color: $grey;
+		padding: 2px;
+		border: 1px solid $grey-dark;
+		border-radius: 6px;
+	}
+
+	.number-input__btn {
+		background-color: $blue-dark;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		border-radius: 4px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 36px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.number-input__field {
+    background-color: transparent;
+    width: 40px;
+    border: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+
+    &::-webkit-inner-spin-button, 
+    &::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+	}
+
+	.number-input__label {
+		margin-top: 8px;
+		font-size: 11px;
+		color: $grey-text-light;
+	}

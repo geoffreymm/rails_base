@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #BREADCRUMBS
+\*------------------------------------*/
+.breadcrumbs {
+	line-height: 2em;
+	margin-bottom: 20px;
+}
+
+	.breadcrumbs__item {
+		display: inline-block;
+		font-size: 22px;
+		font-weight: 200;
+		color: $grey-text-lighter;
+
+		&:after {
+			content: '\e902';
+			display: inline-block;
+			margin-left: 6px;
+			margin-right: 4px;
+	  	font-family: 'wellclub-bridge';
+	  	font-size: 12px;
+		}
+
+		&:last-child {
+			font-size: 32px;
+			color: $blue-dark;
+
+			&:after {
+				content: none;
+			}
+		}
+	}

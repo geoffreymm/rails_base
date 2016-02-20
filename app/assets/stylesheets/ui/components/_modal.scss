@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.modal__container {
+  position: fixed;
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  width: 30em;
+  height: 18.75em;
+
+  padding: 1em;
+
+  background-color: $modal__container-bg;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px $drop-shadow;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $modal__overlay-bg;
+}
+
+.modal__title {
+  font-size: 1.125em; // 18/16px
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal__actions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3.25em;
+
+  background-color: $modal__actions-bg;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 -1px #dbdbdb;
+}
+
+.modal__btn {
+  width: 50%;
+  height: 100%;
+
+  background-color: transparent;
+  border: 0;
+  font-size: .75em; // 12/16px
+  font-weight: 700;
+
+  &:hover {
+    background-color: darken($modal__actions-bg, 10%);
+  }
+
+  & + & {
+    box-shadow: -1px 0 #dbdbdb;
+  }
+}
+
+.modal__btn--primary {
+  color: $link-color;
+
+  &:hover {
+    background-color: $link-color;
+    color: #fff;
+  }
+}
+
+.modal__btn--cancel {
+  color: $cancel-color;
+}

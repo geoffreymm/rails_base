@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    #PAGE-BLOCK
+\*------------------------------------*/
+.page-block {
+	margin-top: 36px;
+
+	.page-block__inline-item:last-child {
+		margin-right: 0;
+	}
+}
+
+	.page-block__inline-item {
+		display: inline-block;
+		margin-right: 15px;
+		vertical-align: top;
+	}
+
+	.page-block__header {
+		@extend %clearfix;
+	}
+
+		.page-block__title {
+			margin-bottom: 20px;
+			color: $grey-text-mid;
+		}
+
+		.page-block__title--inline {
+			display: inline-block;
+		}
+
+		.page-block__top-action {
+			float: right;
+		}
+
+		.page-block__header__icon {
+			color: $grey-dark;
+		}

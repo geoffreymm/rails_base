@@ -1,0 +1,80 @@
+/*------------------------------------*\
+    #DETAILS-ROW
+\*------------------------------------*/
+.details-row {
+	@extend %clearfix;
+	padding: 5px 5px 5px 12px;
+	border-radius: 4px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+	background-color: #fff;
+	font-size: 13px;
+}
+
+	.details-row__item {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.details-row__performance {
+		height: 10px;
+		width: 10px;
+    margin-right: 18px;
+		border-radius: 50%;
+	}
+
+	/* Specify the performance icon color */
+	.details-row__performance--default {
+		border: 1px solid #ccc;		
+	}
+
+	.details-row__performance--red {
+		background-color: $red;
+	}
+
+	.details-row__performance--yellow {
+		background-color: $yellow;
+	}
+
+	.details-row__performance--green {
+		background-color: $green;
+	}
+
+	.details-row__list {
+		line-height: 35px;
+
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			padding-right: 20px;
+			border-right: 1px solid;
+			line-height: 1em;
+			color: $grey-text-mid;
+
+			&:last-child {
+				border-right: none;
+				margin-right: 0;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.details-row__actions {
+		float: right;
+
+		p, a {
+			display: inline-block;
+		}
+
+		a {
+			margin-left: 4px;
+		}
+	}
+
+		.details-row__status {
+			margin-right: 20px;
+			text-transform: uppercase;
+		}
+
+		.details-row__label {
+			color: $grey-text-light;
+		}

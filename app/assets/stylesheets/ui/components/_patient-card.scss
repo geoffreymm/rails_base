@@ -1,0 +1,204 @@
+/*------------------------------------*\
+    #PATIENT-CARD
+\*------------------------------------*/
+.patient-card {
+	position: relative;
+	display: inline-block;
+	height: 11.875em;
+	width: 18.5em;
+	background-color: transparent;
+	text-align: center;
+
+	/* Panel */
+	&__panel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		height: 11.875em;
+		width: 18.5em;
+		padding-top: 1.125em; // v: 18/16px; h: 6/16px
+		background-color: $patient-card-bg;
+		background-repeat: no-repeat;
+		background-size: contain;
+		box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+
+		&:hover {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&__panel--default {}
+
+	&__panel--waiting {
+		padding-bottom: 1.125em; // v: 18/16px
+	}
+
+	&__panel--edit {
+		padding-top: 2.5em; // 40 / 16px
+		background-color: $patient-card-edit;
+		border-radius: 4px;
+	}
+
+	/* Default panel elements */
+	&__name {
+		font-size: 1.125em; // 18px / 16px
+		margin: 0;
+	}
+
+	&__clinic,
+	&__provider,
+	&__status {
+		color: $patient-card-status;
+		font-size: .8125em; // 13px / 16px
+	}
+
+	&__sparkline {
+		bottom: 0;
+		position: absolute;
+		height: 40px;
+		width: 190px;
+		transform: translateX(-50%);
+		backface-visibility: hidden;
+	}
+
+	&__edit-btn {
+		top: 1em;
+		right: 1em;
+		position: absolute;
+		z-index: 2; //TODO
+	}
+
+	&__message {
+		display: inline-block;
+		margin: 1.2em;
+		padding: .4em 1.2em;
+		background-color: $patient-card-message-bg;
+		border-radius: 2em;
+		color: $patient-card-message-txt;
+		font-size: .6875em; // 11px / 16px
+		font-weight: 700;
+
+		&--waiting {
+			background-color: $patient-card-message-waiting-bg;
+		}
+	}
+
+	/* Waiting panel elements */
+	&__info {
+		bottom: 0;
+		position: absolute;
+		overflow: auto;
+		width: 100%;
+		background-color: $patient-card-actions-waiting-bg;
+		border-radius: 0 0 4px 4px;
+		box-shadow: 0 -1px 0 $patient-card-info-shadow;
+		padding: 0.3125em 0.625em 0.625em; // 5/16px; 10&16px;
+		text-align: left;
+	}
+
+	&__info-phone { float: left; }
+
+	&__info-invite { float: right; }
+
+	&__info-title {
+		color: $patient-card-info-title;
+		font-size: .6875em; // 11px / 16px
+	}
+
+	&__info-value {
+		color: $patient-card-info-value;
+		font-size: .8125em; // 13px / 16px
+		font-weight: 700;
+	}
+
+
+	/* Edit panel elements */
+	&__edit-field {
+		float: left;
+		padding: 0 .625em .625em; // 10/16px
+		width: 100%;
+	}
+
+	&__edit-field--half {
+		width: 50%;
+
+		& + & {
+			box-shadow: 0 -1px #dbdbdb;
+		}
+	}
+
+	&__edit-phone {}
+
+	&__input {
+		border: 0;
+		border-radius: 2px;
+		height: 2.28571428571429em; // 32 / 14px;
+		width: 100%;
+		font-size: .875em; // 14 / 16px
+		text-align: center;
+
+		&:focus {
+			border: 2px solid $patient-card-focus;
+		}
+	}
+
+	&__close-btn {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 1.2em; // 12/10px
+		background-color: transparent;
+		border: 0;
+		color: $alternate-text-color;
+		font-size: .625em; // 10/16px
+		opacity: .5;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__save-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: transparent;
+		padding: 1em; // 12px
+		border: 0;
+		color: $alternate-text-color;
+		font-size: .75em;
+		opacity: .5;
+		text-transform: uppercase;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__edit-actions {
+		color: $alternate-text-color;
+		bottom: 0;
+		position: absolute;
+		height: 2.5em; // 40 / 16px
+		width: 100%;
+		line-height: 2.5em; // 40 / 16px
+		box-shadow: 0 -1px #dcdcdc;
+	}
+
+	&__edit-action-btn {
+		float: left;
+		height: 100%;
+		width: 50%;
+		font-size: .75em; // 12 / 16px
+		font-weight: 700;
+
+		&:hover {
+			background-color: rgba(255,255,255,.3);
+		}
+
+		& + & {
+			box-shadow: -1px 0 #dcdcdc;
+		}
+	}
+}
